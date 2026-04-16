@@ -9,12 +9,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Montserrat', sans-serif; }
-        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        html { 
+            scroll-behavior: smooth; 
+        }
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, .font-serif { 
+            font-family: 'Playfair Display', serif; 
+            letter-spacing: 0.02em;
+        }
+        .tracking-widest {
+            letter-spacing: 0.15em;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        .delay-100 { animation-delay: 0.15s; }
+        .delay-200 { animation-delay: 0.3s; }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAFAFA;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d6d3d1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a29e;
+        }
     </style>
 </head>
-<body class="bg-[#FAFAFA] text-stone-700 antialiased">
+<body class="bg-[#FAFAFA] text-stone-700">
 
     <nav class="bg-white/95 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 border-b border-stone-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,21 +78,23 @@
     <header class="pt-32 pb-24 bg-stone-100 relative overflow-hidden">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/rice-paper.png')] opacity-30"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-12 relative z-10">
-            <h1 class="text-5xl md:text-6xl font-serif text-emerald-950 mb-6 leading-tight">
+            <h1 class="text-5xl md:text-6xl font-serif text-emerald-950 mb-6 leading-tight animate-fade-in-up">
                 Wellness from Japan <br><span class="italic text-emerald-800 font-normal">to the World</span>
             </h1>
-            <p class="text-lg md:text-xl text-stone-600 mb-10 max-w-2xl mx-auto leading-loose">
+            <p class="text-lg md:text-xl text-stone-600 mb-10 max-w-2xl mx-auto leading-loose animate-fade-in-up delay-100">
                 Bridging "Mind & Body" Health with Innovative Japanese Technology. We specialize in distributing high-quality health and beauty equipment worldwide.
             </p>
-            <a href="#products" class="inline-block bg-emerald-900 text-white text-sm tracking-widest uppercase px-10 py-4 rounded-full shadow-md hover:bg-emerald-800 transition-all duration-300 hover:shadow-lg">
-                Discover Our Collection
-            </a>
+            <div class="animate-fade-in-up delay-200">
+                <a href="#products" class="inline-block bg-emerald-900 text-white text-sm tracking-widest uppercase px-10 py-4 rounded-full shadow-md hover:bg-emerald-800 transition-all duration-300 hover:shadow-lg">
+                    Discover Our Collection
+                </a>
+            </div>
         </div>
     </header>
 
     <section id="products" class="py-24 bg-stone-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16 animate-fade-in-up">
                 <span class="text-sm text-emerald-700 tracking-widest uppercase mb-3 block font-medium">Our Collection</span>
                 <h2 class="text-4xl md:text-5xl font-serif text-stone-900">Featured Products</h2>
                 <div class="w-16 h-px bg-emerald-400 mx-auto mt-8"></div>
@@ -58,7 +102,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col">
+                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col animate-fade-in-up">
                     <div class="relative w-full h-64 bg-white overflow-hidden border-b border-stone-100">
                         <img src="s_s_gc-photo01.png" alt="Super-Foot-Cleaner" class="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-in-out">
                     </div>
@@ -73,7 +117,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col">
+                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col animate-fade-in-up delay-100">
                     <div class="relative w-full h-64 bg-white overflow-hidden border-b border-stone-100">
                         <img src="pro_image.jpg" alt="Heat-Tech PRO" class="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-in-out">
                     </div>
@@ -88,7 +132,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col">
+                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col animate-fade-in-up delay-200">
                     <div class="relative w-full h-64 bg-white overflow-hidden border-b border-stone-100">
                         <img src="aroma_img.jpg" alt="Aroma Fragrance Shampoo" class="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-in-out">
                     </div>
@@ -103,7 +147,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col">
+                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col animate-fade-in-up">
                     <div class="relative w-full h-64 bg-white overflow-hidden border-b border-stone-100">
                         <img src="SBrain1_img.jpg" alt="Super Brain 1" class="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-in-out">
                     </div>
@@ -118,7 +162,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col">
+                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col animate-fade-in-up delay-100">
                     <div class="relative w-full h-64 bg-white overflow-hidden border-b border-stone-100">
                         <img src="Relaxα_img02.jpg" alt="Hydrogen Bath" class="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-in-out">
                     </div>
@@ -132,31 +176,70 @@
                         <p class="text-base text-stone-900 border-t border-stone-100 pt-5 mt-auto">Price: <span class="text-rose-600 font-semibold">SGD 778</span></p>
                     </div>
                 </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col animate-fade-in-up delay-200">
+                    <div class="relative w-full h-64 bg-white overflow-hidden border-b border-stone-100">
+                        <img src="THWater.jpg" alt="The Healing Water" class="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-[11px] font-semibold text-emerald-600 uppercase tracking-widest mb-3">Personal Care</div>
+                        <h3 class="text-xl font-serif text-stone-900 mb-4">The Healing Water</h3>
+                        <p class="text-stone-600 mb-6 text-sm h-24 overflow-y-auto leading-relaxed">
+                            The ultimate detox water. Accelerates the detox of heavy metals and chemical substances while mitigating the influence of spike proteins.
+                        </p>
+                        <a href="flyers/Healing Water Health.pdf" target="_blank" class="text-sm font-medium text-emerald-700 hover:text-emerald-900 underline mb-6">Download PDF Flyer</a>
+                        <p class="text-base text-stone-900 border-t border-stone-100 pt-5 mt-auto">Price: <span class="text-rose-600 font-semibold">SGD 46</span></p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col animate-fade-in-up">
+                    <div class="relative w-full h-64 bg-white overflow-hidden border-b border-stone-100">
+                        <img src="suppo.jpg" alt="Moving Surprising Supporter" class="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-[11px] font-semibold text-emerald-600 uppercase tracking-widest mb-3">Personal Care</div>
+                        <h3 class="text-xl font-serif text-stone-900 mb-4">Moving Surprising Supporter</h3>
+                        <p class="text-stone-600 mb-6 text-sm h-24 overflow-y-auto leading-relaxed">
+                            Experience a gentle, deep-seated warmth just by wearing, thanks to the phenomenal FAR-INFRARED (FIR) effect and huge negative ion volume.
+                        </p>
+                        <a href="flyers/Suppoter-Brochure-1.pdf" target="_blank" class="text-sm font-medium text-emerald-700 hover:text-emerald-900 underline mb-6">Download PDF Flyer</a>
+                        <p class="text-base text-stone-900 border-t border-stone-100 pt-5 mt-auto">Price: <span class="text-rose-600 font-semibold">SGD 71.6</span></p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col animate-fade-in-up delay-100">
+                    <div class="relative w-full h-64 bg-white overflow-hidden border-b border-stone-100">
+                        <img src="waist supporter box.jpg" alt="Moving Surprising Supporter for waist" class="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-[11px] font-semibold text-emerald-600 uppercase tracking-widest mb-3">Personal Care</div>
+                        <h3 class="text-xl font-serif text-stone-900 mb-4">Moving Surprising Supporter for waist</h3>
+                        <p class="text-stone-600 mb-6 text-sm h-24 overflow-y-auto leading-relaxed">
+                            Ultra Pelvic Support For WAISTS. Provides deep warmth with 87% Emissivity FAR-INFRARED (FIR) EFFECT.
+                        </p>
+                        <a href="flyers/Supporter for waist.pdf" target="_blank" class="text-sm font-medium text-emerald-700 hover:text-emerald-900 underline mb-6">Download PDF Flyer</a>
+                        <p class="text-base text-stone-900 border-t border-stone-100 pt-5 mt-auto">Price: <span class="text-rose-600 font-semibold">SGD 235</span></p>
+                    </div>
+                </div>
             </div>
             
-            <div class="mt-20 text-center">
+            <div class="mt-20 text-center animate-fade-in-up delay-200">
                 <a href="brochures.html" class="inline-block bg-emerald-700 text-white text-sm tracking-widest uppercase px-12 py-5 rounded-full shadow-md hover:bg-emerald-800 transition-all duration-300 hover:shadow-lg font-medium">
                     View All Product Brochures
                 </a>
-            </div>
-
-            <div class="mt-12 text-center">
-                <p class="text-sm text-stone-500 bg-white inline-block py-4 px-8 rounded-full border border-stone-200 shadow-sm">
-                    Note for payment gateway reviewer: Exact product pricing is calculated based on B2B volume and international shipping destination. Please contact us for a formal quote.
-                </p>
             </div>
         </div>
     </section>
 
     <section id="about" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20">
+            <div class="text-center mb-20 animate-fade-in-up">
                 <span class="text-sm text-emerald-700 tracking-widest uppercase mb-3 block font-medium">Our Story</span>
                 <h2 class="text-4xl md:text-5xl font-serif text-stone-900">About Us</h2>
                 <div class="w-16 h-px bg-emerald-400 mx-auto mt-8"></div>
             </div>
 
-            <div class="max-w-4xl mx-auto text-center mb-24">
+            <div class="max-w-4xl mx-auto text-center mb-24 animate-fade-in-up delay-100">
                 <h3 class="text-2xl font-serif mb-8 text-emerald-900">Our Philosophy</h3>
                 <p class="text-stone-700 mb-10 text-lg leading-loose">
                     At Health & Smile Co., Ltd., we believe that true health comes from the balance of both the "Mind and Body." We carefully select and develop products that are kind to the body and the environment, focusing on natural ingredients and cutting-edge wellness technology.
@@ -168,7 +251,7 @@
                 </div>
             </div>
 
-            <div class="max-w-5xl mx-auto bg-stone-50 p-10 md:p-16 rounded-3xl border border-stone-100 shadow-sm">
+            <div class="max-w-5xl mx-auto bg-stone-50 p-10 md:p-16 rounded-3xl border border-stone-100 shadow-sm animate-fade-in-up delay-200">
                 <h3 class="text-2xl font-serif mb-10 text-center text-stone-900 border-b border-stone-200 pb-6">Company Profile</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-8 text-base">
                     <div class="md:col-span-1 font-medium text-emerald-900 flex items-center tracking-wide uppercase text-sm">Company Name</div>
