@@ -7,24 +7,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         html { scroll-behavior: smooth; }
         body { font-family: 'Montserrat', sans-serif; }
         h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
     </style>
 </head>
-<body class="bg-[#FAFAFA] text-stone-800 font-light">
+<body class="bg-[#FAFAFA] text-stone-700 antialiased">
 
-    <nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 border-b border-stone-100">
+    <nav class="bg-white/95 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 border-b border-stone-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20">
                 <div class="flex items-center">
-                    <a href="#" class="text-2xl font-serif font-bold text-emerald-800 tracking-wide">Health & Smile</a>
+                    <a href="#" class="text-2xl font-serif font-bold text-emerald-900 tracking-wide">Health & Smile</a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8 lg:space-x-10">
-                    <a href="#about" class="text-stone-600 hover:text-emerald-700 text-sm tracking-widest uppercase transition-colors">About</a>
                     <a href="#products" class="text-stone-600 hover:text-emerald-700 text-sm tracking-widest uppercase transition-colors">Products</a>
+                    <a href="#about" class="text-stone-600 hover:text-emerald-700 text-sm tracking-widest uppercase transition-colors">About</a>
                     <a href="brochures.html" class="text-emerald-700 font-medium text-sm tracking-widest uppercase transition-colors">Brochures</a>
                     <a href="#contact" class="text-stone-600 hover:text-emerald-700 text-sm tracking-widest uppercase transition-colors">Contact</a>
                     <a href="#legal" class="text-stone-600 hover:text-emerald-700 text-sm tracking-widest uppercase transition-colors">Legal</a>
@@ -36,146 +36,159 @@
     <header class="pt-32 pb-24 bg-stone-100 relative overflow-hidden">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/rice-paper.png')] opacity-30"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-12 relative z-10">
-            <h1 class="text-4xl md:text-6xl font-serif text-emerald-900 mb-6 leading-tight">
-                Wellness from Japan <br><span class="italic text-emerald-700 font-light">to the World</span>
+            <h1 class="text-5xl md:text-6xl font-serif text-emerald-950 mb-6 leading-tight">
+                Wellness from Japan <br><span class="italic text-emerald-800 font-normal">to the World</span>
             </h1>
-            <p class="text-lg md:text-xl text-stone-600 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+            <p class="text-lg md:text-xl text-stone-600 mb-10 max-w-2xl mx-auto leading-loose">
                 Bridging "Mind & Body" Health with Innovative Japanese Technology. We specialize in distributing high-quality health and beauty equipment worldwide.
             </p>
-            <a href="#products" class="inline-block bg-emerald-800 text-white text-sm tracking-widest uppercase px-10 py-4 rounded-full shadow-md hover:bg-emerald-700 transition-all duration-300 hover:shadow-lg">
+            <a href="#products" class="inline-block bg-emerald-900 text-white text-sm tracking-widest uppercase px-10 py-4 rounded-full shadow-md hover:bg-emerald-800 transition-all duration-300 hover:shadow-lg">
                 Discover Our Collection
             </a>
         </div>
     </header>
 
-    <section id="about" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="text-sm text-emerald-600 tracking-widest uppercase mb-2 block">Our Story</span>
-                <h2 class="text-4xl font-serif text-stone-900">About Us</h2>
-                <div class="w-12 h-px bg-emerald-300 mx-auto mt-6"></div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <div class="order-2 md:order-1">
-                    <h3 class="text-2xl font-serif mb-6 text-emerald-800">Our Philosophy</h3>
-                    <p class="text-stone-600 mb-6 leading-loose font-light">
-                        At Health & Smile Co., Ltd., we believe that true health comes from the balance of both the "Mind and Body." We carefully select and develop products that are kind to the body and the environment, focusing on natural ingredients and cutting-edge wellness technology.
-                    </p>
-                    <ul class="text-stone-600 mb-8 space-y-3 font-light">
-                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-400 rounded-full mr-3 block"></span><strong class="font-medium text-stone-800 mr-2">Anshin</strong> (Peace of Mind)</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-400 rounded-full mr-3 block"></span><strong class="font-medium text-stone-800 mr-2">Kando</strong> (Impression / Emotion)</li>
-                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-400 rounded-full mr-3 block"></span><strong class="font-medium text-stone-800 mr-2">Genki</strong> (Energy / Vitality)</li>
-                    </ul>
-                </div>
-                <div class="order-1 md:order-2 bg-stone-50 p-10 rounded-2xl border border-stone-100 shadow-sm">
-                    <h3 class="text-xl font-serif mb-6 text-stone-900 border-b border-stone-200 pb-4">Company Profile</h3>
-                    <ul class="text-stone-600 space-y-4 text-sm leading-relaxed">
-                        <li><strong class="text-stone-900 block mb-1">Company Name</strong> Health & Smile Co., Ltd.<br><span class="text-xs text-stone-500">(Overseas Division of Mind Fitness Co., Ltd.)</span></li>
-                        <li><strong class="text-stone-900 block mb-1">Headquarters</strong> 1-7-19 Imabashi, Chuo-ku, Osaka-shi, Osaka 541-0042, Japan</li>
-                        <li><strong class="text-stone-900 block mb-1">Phone</strong> +81-6-6202-5401</li>
-                        <li><strong class="text-stone-900 block mb-1">Business Activities</strong> Global sales of health and beauty equipment, export of Japanese wellness products, health consulting.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="products" class="py-24 bg-stone-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="text-sm text-emerald-600 tracking-widest uppercase mb-2 block">Our Collection</span>
-                <h2 class="text-4xl font-serif text-stone-900">Featured Products</h2>
-                <div class="w-12 h-px bg-emerald-300 mx-auto mt-6"></div>
-                <p class="mt-6 text-stone-500 font-light">Professional Equipment & Personal Care Wellness</p>
+                <span class="text-sm text-emerald-700 tracking-widest uppercase mb-3 block font-medium">Our Collection</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-stone-900">Featured Products</h2>
+                <div class="w-16 h-px bg-emerald-400 mx-auto mt-8"></div>
+                <p class="mt-6 text-stone-600 text-lg">Professional Equipment & Personal Care Wellness</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="bg-white rounded-2xl shadow-sm border border-stone-100 overflow-hidden hover:shadow-md transition-shadow duration-300 group flex flex-col">
-                    <div class="relative w-full h-56 bg-white overflow-hidden border-b border-stone-100">
-                        <img src="s_s_gc-photo01.png" alt="Super-Foot-Cleaner" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col">
+                    <div class="relative w-full h-64 bg-white overflow-hidden border-b border-stone-100">
+                        <img src="s_s_gc-photo01.png" alt="Super-Foot-Cleaner" class="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-in-out">
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
-                        <div class="text-[10px] font-bold text-amber-600 uppercase tracking-widest mb-3">Professional Equipment</div>
-                        <h3 class="text-xl font-serif text-stone-900 mb-3">Super-Foot-Cleaner</h3>
-                        <p class="text-stone-500 mb-4 text-sm h-24 overflow-y-auto leading-relaxed font-light">
+                        <div class="text-[11px] font-semibold text-amber-700 uppercase tracking-widest mb-3">Professional Equipment</div>
+                        <h3 class="text-xl font-serif text-stone-900 mb-4">Super-Foot-Cleaner</h3>
+                        <p class="text-stone-600 mb-6 text-sm h-24 overflow-y-auto leading-relaxed">
                             The ultimate detox foot bath machine widely adopted by medical clinics, osteopathic clinics, and esthetic salons across Japan.
                         </p>
-                        <a href="flyers/GC-Health.pdf" target="_blank" class="text-xs text-emerald-600 hover:text-emerald-800 underline mb-4">Download PDF Flyer</a>
-                        <p class="text-sm text-stone-900 border-t border-stone-100 pt-4 mt-auto">Price: <span class="text-rose-500 font-medium">SGD 5,968</span></p>
+                        <a href="flyers/GC-Health.pdf" target="_blank" class="text-sm font-medium text-emerald-700 hover:text-emerald-900 underline mb-6">Download PDF Flyer</a>
+                        <p class="text-base text-stone-900 border-t border-stone-100 pt-5 mt-auto">Price: <span class="text-rose-600 font-semibold">SGD 5,968</span></p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-sm border border-stone-100 overflow-hidden hover:shadow-md transition-shadow duration-300 group flex flex-col">
-                    <div class="relative w-full h-56 bg-white overflow-hidden border-b border-stone-100">
-                        <img src="pro_image.jpg" alt="Heat-Tech PRO" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col">
+                    <div class="relative w-full h-64 bg-white overflow-hidden border-b border-stone-100">
+                        <img src="pro_image.jpg" alt="Heat-Tech PRO" class="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-in-out">
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
-                        <div class="text-[10px] font-bold text-amber-600 uppercase tracking-widest mb-3">Professional Equipment</div>
-                        <h3 class="text-xl font-serif text-stone-900 mb-3">Heat-Tech PRO</h3>
-                        <p class="text-stone-500 mb-4 text-sm h-24 overflow-y-auto leading-relaxed font-light">
+                        <div class="text-[11px] font-semibold text-amber-700 uppercase tracking-widest mb-3">Professional Equipment</div>
+                        <h3 class="text-xl font-serif text-stone-900 mb-4">Heat-Tech PRO</h3>
+                        <p class="text-stone-600 mb-6 text-sm h-24 overflow-y-auto leading-relaxed">
                             A high-performance heating device designed for professional therapists and estheticians. Provides deep warmth to support relaxation and circulation.
                         </p>
-                        <a href="#" class="text-xs text-stone-400 mb-4">PDF Flyer Unavailable</a>
-                        <p class="text-sm text-stone-900 border-t border-stone-100 pt-4 mt-auto">Price: <span class="text-rose-500 font-medium">SGD 2,485</span></p>
+                        <a href="#" class="text-sm font-medium text-stone-400 mb-6 cursor-not-allowed">PDF Flyer Unavailable</a>
+                        <p class="text-base text-stone-900 border-t border-stone-100 pt-5 mt-auto">Price: <span class="text-rose-600 font-semibold">SGD 2,485</span></p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-sm border border-stone-100 overflow-hidden hover:shadow-md transition-shadow duration-300 group flex flex-col">
-                    <div class="relative w-full h-56 bg-white overflow-hidden border-b border-stone-100">
-                        <img src="aroma_img.jpg" alt="Aroma Fragrance Shampoo" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col">
+                    <div class="relative w-full h-64 bg-white overflow-hidden border-b border-stone-100">
+                        <img src="aroma_img.jpg" alt="Aroma Fragrance Shampoo" class="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-in-out">
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
-                        <div class="text-[10px] font-bold text-emerald-500 uppercase tracking-widest mb-3">Personal Care</div>
-                        <h3 class="text-xl font-serif text-stone-900 mb-3">Aroma Fragrance Shampoo</h3>
-                        <p class="text-stone-500 mb-4 text-sm h-24 overflow-y-auto leading-relaxed font-light">
+                        <div class="text-[11px] font-semibold text-emerald-600 uppercase tracking-widest mb-3">Personal Care</div>
+                        <h3 class="text-xl font-serif text-stone-900 mb-4">Aroma Fragrance Shampoo</h3>
+                        <p class="text-stone-600 mb-6 text-sm h-24 overflow-y-auto leading-relaxed">
                             A revolutionary all-in-one shampoo with an aroma scent that is gentle on the skin, hair, and body. Contains 21 types of natural plant ingredients.
                         </p>
-                        <a href="flyers/Aroma%20Fragrance%20Health.pdf" target="_blank" class="text-xs text-emerald-600 hover:text-emerald-800 underline mb-4">Download PDF Flyer</a>
-                        <p class="text-sm text-stone-900 border-t border-stone-100 pt-4 mt-auto">Price: <span class="text-rose-500 font-medium">SGD 28.69</span></p>
+                        <a href="flyers/Aroma%20Fragrance%20Health.pdf" target="_blank" class="text-sm font-medium text-emerald-700 hover:text-emerald-900 underline mb-6">Download PDF Flyer</a>
+                        <p class="text-base text-stone-900 border-t border-stone-100 pt-5 mt-auto">Price: <span class="text-rose-600 font-semibold">SGD 28.69</span></p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-sm border border-stone-100 overflow-hidden hover:shadow-md transition-shadow duration-300 group flex flex-col">
-                    <div class="relative w-full h-56 bg-white overflow-hidden border-b border-stone-100">
-                        <img src="SBrain1_img.jpg" alt="Super Brain 1" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col">
+                    <div class="relative w-full h-64 bg-white overflow-hidden border-b border-stone-100">
+                        <img src="SBrain1_img.jpg" alt="Super Brain 1" class="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-in-out">
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
-                        <div class="text-[10px] font-bold text-emerald-500 uppercase tracking-widest mb-3">Personal Care</div>
-                        <h3 class="text-xl font-serif text-stone-900 mb-3">Super Brain 1</h3>
-                        <p class="text-stone-500 mb-4 text-sm h-24 overflow-y-auto leading-relaxed font-light">
+                        <div class="text-[11px] font-semibold text-emerald-600 uppercase tracking-widest mb-3">Personal Care</div>
+                        <h3 class="text-xl font-serif text-stone-900 mb-4">Super Brain 1</h3>
+                        <p class="text-stone-600 mb-6 text-sm h-24 overflow-y-auto leading-relaxed">
                             A unique device that guides brain waves to Alpha, Theta, or Delta states simply by listening to a specific sound.
                         </p>
-                        <a href="#" class="text-xs text-stone-400 mb-4">PDF Flyer Unavailable</a>
-                        <p class="text-sm text-stone-900 border-t border-stone-100 pt-4 mt-auto">Price: <span class="text-rose-500 font-medium"> SGD 965</span></p>
+                        <a href="#" class="text-sm font-medium text-stone-400 mb-6 cursor-not-allowed">PDF Flyer Unavailable</a>
+                        <p class="text-base text-stone-900 border-t border-stone-100 pt-5 mt-auto">Price: <span class="text-rose-600 font-semibold"> SGD 965</span></p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-sm border border-stone-100 overflow-hidden hover:shadow-md transition-shadow duration-300 group flex flex-col">
-                    <div class="relative w-full h-56 bg-white overflow-hidden border-b border-stone-100">
-                        <img src="Relaxα_img02.jpg" alt="Hydrogen Bath" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                <div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow duration-300 group flex flex-col">
+                    <div class="relative w-full h-64 bg-white overflow-hidden border-b border-stone-100">
+                        <img src="Relaxα_img02.jpg" alt="Hydrogen Bath" class="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-700 ease-in-out">
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
-                        <div class="text-[10px] font-bold text-emerald-500 uppercase tracking-widest mb-3">Personal Care</div>
-                        <h3 class="text-xl font-serif text-stone-900 mb-3">Hydrogen Bath</h3>
-                        <p class="text-stone-500 mb-4 text-sm h-24 overflow-y-auto leading-relaxed font-light">
+                        <div class="text-[11px] font-semibold text-emerald-600 uppercase tracking-widest mb-3">Personal Care</div>
+                        <h3 class="text-xl font-serif text-stone-900 mb-4">Hydrogen Bath</h3>
+                        <p class="text-stone-600 mb-6 text-sm h-24 overflow-y-auto leading-relaxed">
                             A tool to generate hydrogen-rich bathwater at home. Addresses the root causes of aging and fatigue.
                         </p>
-                        <a href="#" class="text-xs text-stone-400 mb-4">PDF Flyer Unavailable</a>
-                        <p class="text-sm text-stone-900 border-t border-stone-100 pt-4 mt-auto">Price: <span class="text-rose-500 font-medium">SGD 778</span></p>
+                        <a href="#" class="text-sm font-medium text-stone-400 mb-6 cursor-not-allowed">PDF Flyer Unavailable</a>
+                        <p class="text-base text-stone-900 border-t border-stone-100 pt-5 mt-auto">Price: <span class="text-rose-600 font-semibold">SGD 778</span></p>
                     </div>
                 </div>
             </div>
             
-            <div class="mt-16 text-center">
-                <a href="brochures.html" class="inline-block bg-emerald-600 text-white text-sm tracking-widest uppercase px-10 py-4 rounded-full shadow-md hover:bg-emerald-700 transition-all duration-300 hover:shadow-lg">
-                    View All Product Brochures & Flyers
+            <div class="mt-20 text-center">
+                <a href="brochures.html" class="inline-block bg-emerald-700 text-white text-sm tracking-widest uppercase px-12 py-5 rounded-full shadow-md hover:bg-emerald-800 transition-all duration-300 hover:shadow-lg font-medium">
+                    View All Product Brochures
                 </a>
             </div>
 
-            <div class="mt-8 text-center">
-                <p class="text-xs text-stone-500 bg-stone-100/50 inline-block py-3 px-6 rounded-full border border-stone-200">
+            <div class="mt-12 text-center">
+                <p class="text-sm text-stone-500 bg-white inline-block py-4 px-8 rounded-full border border-stone-200 shadow-sm">
                     Note for payment gateway reviewer: Exact product pricing is calculated based on B2B volume and international shipping destination. Please contact us for a formal quote.
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <span class="text-sm text-emerald-700 tracking-widest uppercase mb-3 block font-medium">Our Story</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-stone-900">About Us</h2>
+                <div class="w-16 h-px bg-emerald-400 mx-auto mt-8"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto text-center mb-24">
+                <h3 class="text-2xl font-serif mb-8 text-emerald-900">Our Philosophy</h3>
+                <p class="text-stone-700 mb-10 text-lg leading-loose">
+                    At Health & Smile Co., Ltd., we believe that true health comes from the balance of both the "Mind and Body." We carefully select and develop products that are kind to the body and the environment, focusing on natural ingredients and cutting-edge wellness technology.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-12">
+                    <div class="flex items-center"><span class="w-3 h-3 bg-emerald-500 rotate-45 mr-4 block"></span><strong class="font-medium text-stone-900 text-lg">Anshin</strong> <span class="text-stone-600 ml-2">(Peace of Mind)</span></div>
+                    <div class="flex items-center"><span class="w-3 h-3 bg-emerald-500 rotate-45 mr-4 block"></span><strong class="font-medium text-stone-900 text-lg">Kando</strong> <span class="text-stone-600 ml-2">(Impression)</span></div>
+                    <div class="flex items-center"><span class="w-3 h-3 bg-emerald-500 rotate-45 mr-4 block"></span><strong class="font-medium text-stone-900 text-lg">Genki</strong> <span class="text-stone-600 ml-2">(Vitality)</span></div>
+                </div>
+            </div>
+
+            <div class="max-w-5xl mx-auto bg-stone-50 p-10 md:p-16 rounded-3xl border border-stone-100 shadow-sm">
+                <h3 class="text-2xl font-serif mb-10 text-center text-stone-900 border-b border-stone-200 pb-6">Company Profile</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-8 text-base">
+                    <div class="md:col-span-1 font-medium text-emerald-900 flex items-center tracking-wide uppercase text-sm">Company Name</div>
+                    <div class="md:col-span-2 text-stone-700 leading-relaxed">Health & Smile Co., Ltd.<br><span class="text-sm text-stone-500 mt-1 block">(Overseas Division of Mind Fitness Co., Ltd.)</span></div>
+
+                    <div class="md:col-span-3 border-t border-stone-200/60"></div>
+
+                    <div class="md:col-span-1 font-medium text-emerald-900 flex items-center tracking-wide uppercase text-sm">Headquarters</div>
+                    <div class="md:col-span-2 text-stone-700 leading-relaxed">1-7-19 Imabashi, Chuo-ku, Osaka-shi, Osaka 541-0042, Japan</div>
+
+                    <div class="md:col-span-3 border-t border-stone-200/60"></div>
+
+                    <div class="md:col-span-1 font-medium text-emerald-900 flex items-center tracking-wide uppercase text-sm">Phone</div>
+                    <div class="md:col-span-2 text-stone-700 leading-relaxed">+81-6-6202-5401</div>
+
+                    <div class="md:col-span-3 border-t border-stone-200/60"></div>
+
+                    <div class="md:col-span-1 font-medium text-emerald-900 flex items-start tracking-wide uppercase text-sm pt-1">Business Activities</div>
+                    <div class="md:col-span-2 text-stone-700 leading-relaxed">Global sales of health and beauty equipment, export of Japanese wellness products, health consulting.</div>
+                </div>
             </div>
         </div>
     </section>
@@ -183,20 +196,20 @@
     <section id="contact" class="py-24 bg-stone-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="text-sm text-emerald-600 tracking-widest uppercase mb-2 block">Get in Touch</span>
-                <h2 class="text-4xl font-serif text-stone-900">Contact & Support</h2>
-                <div class="w-12 h-px bg-emerald-300 mx-auto mt-6"></div>
+                <span class="text-sm text-emerald-700 tracking-widest uppercase mb-3 block font-medium">Get in Touch</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-stone-900">Contact & Support</h2>
+                <div class="w-16 h-px bg-emerald-400 mx-auto mt-8"></div>
             </div>
-            <div class="max-w-3xl mx-auto bg-white p-12 rounded-3xl text-center border border-stone-100 shadow-sm relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-50 rounded-full -mr-10 -mt-10 opacity-50"></div>
-                <div class="absolute bottom-0 left-0 w-24 h-24 bg-amber-50 rounded-full -ml-8 -mb-8 opacity-50"></div>
+            <div class="max-w-4xl mx-auto bg-white p-12 md:p-16 rounded-3xl text-center border border-stone-200 shadow-sm relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-40 h-40 bg-emerald-50 rounded-full -mr-16 -mt-16 opacity-50"></div>
+                <div class="absolute bottom-0 left-0 w-32 h-32 bg-amber-50 rounded-full -ml-12 -mb-12 opacity-50"></div>
                 <div class="relative z-10">
-                    <p class="text-lg text-stone-600 mb-8 font-light">For product inquiries, distribution opportunities, or customer support, please get in touch with us.</p>
-                    <div class="space-y-6 text-stone-800 font-light">
-                        <p><strong class="font-medium text-emerald-800 block text-sm mb-1 uppercase tracking-widest">Address</strong> 1-7-19 Imabashi, Chuo-ku, Osaka 541-0042, Japan</p>
-                        <p><strong class="font-medium text-emerald-800 block text-sm mb-1 uppercase tracking-widest">Phone</strong> +81-6-6202-5401</p>
-                        <p><strong class="font-medium text-emerald-800 block text-sm mb-1 uppercase tracking-widest">Email</strong> <span class="text-stone-600">kazu@mindf.jp</span></p>
-                        <p><strong class="font-medium text-emerald-800 block text-sm mb-1 uppercase tracking-widest">Business Hours</strong> Mon-Fri, 9:00 - 17:00 (JST)</p>
+                    <p class="text-xl text-stone-700 mb-10 leading-relaxed">For product inquiries, distribution opportunities, or customer support, please get in touch with us.</p>
+                    <div class="space-y-6 text-stone-700 text-lg">
+                        <p><strong class="font-semibold text-emerald-900 text-sm mb-1 uppercase tracking-widest block">Address</strong> 1-7-19 Imabashi, Chuo-ku, Osaka 541-0042, Japan</p>
+                        <p><strong class="font-semibold text-emerald-900 text-sm mb-1 uppercase tracking-widest block">Phone</strong> +81-6-6202-5401</p>
+                        <p><strong class="font-semibold text-emerald-900 text-sm mb-1 uppercase tracking-widest block">Email</strong> <span class="text-stone-600">kazu@mindf.jp</span></p>
+                        <p><strong class="font-semibold text-emerald-900 text-sm mb-1 uppercase tracking-widest block">Business Hours</strong> Mon-Fri, 9:00 - 17:00 (JST)</p>
                     </div>
                 </div>
             </div>
@@ -206,30 +219,30 @@
     <section id="legal" class="py-24 bg-stone-100 text-stone-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-serif text-stone-900">Legal & Policies</h2>
-                <div class="w-12 h-px bg-emerald-400 mx-auto mt-6"></div>
+                <h2 class="text-3xl md:text-4xl font-serif text-stone-900">Legal & Policies</h2>
+                <div class="w-16 h-px bg-emerald-400 mx-auto mt-8"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-                <div class="bg-white p-8 rounded-2xl border border-stone-200 shadow-sm">
-                    <h3 class="text-xl font-serif text-stone-800 mb-6 flex items-center"><span class="w-1 h-4 bg-emerald-500 mr-3 block"></span>Privacy Policy</h3>
-                    <p class="text-sm leading-relaxed mb-4 font-light text-stone-600">Health & Smile Co., Ltd. is committed to protecting your privacy. We use your personal information only for order processing, shipping, and customer service.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="bg-white p-10 rounded-2xl border border-stone-200 shadow-sm">
+                    <h3 class="text-2xl font-serif text-stone-900 mb-6 flex items-center"><span class="w-1.5 h-6 bg-emerald-500 mr-4 block rounded-full"></span>Privacy Policy</h3>
+                    <p class="text-base leading-relaxed text-stone-600">Health & Smile Co., Ltd. is committed to protecting your privacy. We use your personal information only for order processing, shipping, and customer service.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl border border-stone-200 shadow-sm">
-                    <h3 class="text-xl font-serif text-stone-800 mb-6 flex items-center"><span class="w-1 h-4 bg-emerald-500 mr-3 block"></span>Terms of Trade</h3>
-                    <ul class="text-sm space-y-4 font-light text-stone-600">
-                        <li><strong class="text-stone-800 font-medium">Distributor:</strong> Health & Smile Co., Ltd.</li>
-                        <li><strong class="text-stone-800 font-medium">Operations Manager:</strong> <span class="text-stone-600">Kazuchika Kobashi</span></li>
+                <div class="bg-white p-10 rounded-2xl border border-stone-200 shadow-sm">
+                    <h3 class="text-2xl font-serif text-stone-900 mb-6 flex items-center"><span class="w-1.5 h-6 bg-emerald-500 mr-4 block rounded-full"></span>Terms of Trade</h3>
+                    <ul class="text-base space-y-4 text-stone-600">
+                        <li><strong class="text-stone-900 font-semibold">Distributor:</strong> Health & Smile Co., Ltd.</li>
+                        <li><strong class="text-stone-900 font-semibold">Operations Manager:</strong> <span class="text-stone-600">Kazuchika Kobashi</span></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-white text-stone-500 py-10 text-center border-t border-stone-200">
+    <footer class="bg-white text-stone-500 py-12 text-center border-t border-stone-200">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-xl font-serif text-emerald-800 mb-4 tracking-wide">Health & Smile Co., Ltd.</h2>
-            <p class="mb-2 font-light text-sm">&copy; 2026 Overseas Div. of Mind Fitness Co., Ltd. All rights reserved.</p>
-            <p class="text-xs font-light">1-7-19 Imabashi, Chuo-ku, Osaka 541-0042, Japan | TEL: +81-6-6202-5401</p>
+            <h2 class="text-2xl font-serif text-emerald-900 mb-4 tracking-wide">Health & Smile Co., Ltd.</h2>
+            <p class="mb-3 text-sm">&copy; 2026 Overseas Div. of Mind Fitness Co., Ltd. All rights reserved.</p>
+            <p class="text-sm">1-7-19 Imabashi, Chuo-ku, Osaka 541-0042, Japan | TEL: +81-6-6202-5401</p>
         </div>
     </footer>
 </body>
