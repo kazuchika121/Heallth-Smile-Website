@@ -297,22 +297,105 @@
                 <span class="text-sm text-emerald-700 tracking-widest uppercase mb-3 block font-medium">Get in Touch</span>
                 <h2 class="text-4xl md:text-5xl font-serif text-stone-900">Contact & Support</h2>
                 <div class="w-16 h-px bg-emerald-400 mx-auto mt-8"></div>
+                <p class="mt-8 text-stone-600">製品に関するお問い合わせや配送のご相談は、以下のフォームよりご連絡ください。</p>
             </div>
-            <div class="max-w-4xl mx-auto bg-white p-12 md:p-16 rounded-3xl text-center border border-stone-200 shadow-sm relative overflow-hidden">
+
+            <div class="max-w-4xl mx-auto bg-white p-8 md:p-16 rounded-3xl border border-stone-200 shadow-sm relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-40 h-40 bg-emerald-50 rounded-full -mr-16 -mt-16 opacity-50"></div>
-                <div class="absolute bottom-0 left-0 w-32 h-32 bg-amber-50 rounded-full -ml-12 -mb-12 opacity-50"></div>
-                <div class="relative z-10">
-                    <p class="text-xl text-stone-700 mb-10 leading-relaxed">For product inquiries, distribution opportunities, or customer support, please get in touch with us.</p>
-                    <div class="space-y-6 text-stone-700 text-lg">
-                        <p><strong class="font-semibold text-emerald-900 text-sm mb-1 uppercase tracking-widest block">Address</strong> 1-7-19 Imabashi, Chuo-ku, Osaka 541-0042, Japan</p>
-                        <p><strong class="font-semibold text-emerald-900 text-sm mb-1 uppercase tracking-widest block">Phone</strong> +81-6-6202-5401</p>
-                        <p><strong class="font-semibold text-emerald-900 text-sm mb-1 uppercase tracking-widest block">Email</strong> <span class="text-stone-600">kazu@mindf.jp</span></p>
-                        <p><strong class="font-semibold text-emerald-900 text-sm mb-1 uppercase tracking-widest block">Business Hours</strong> Mon-Fri, 9:00 - 17:00 (JST)</p>
+                
+                <form action="https://formspree.io/f/maqaqzrr" method="POST" id="contact-form" class="relative z-10 space-y-8">
+                    <div>
+                        <label class="block text-sm font-semibold text-emerald-900 uppercase tracking-widest mb-2">Trade Name and Individual Name</label>
+                        <input type="text" name="name" required placeholder="Name / Company Name"
+                            class="w-full px-5 py-4 rounded-xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all bg-stone-50">
                     </div>
-                </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-emerald-900 uppercase tracking-widest mb-2">Address</label>
+                        <input type="text" id="address" name="address" required placeholder="Street Address, City, Country"
+                            class="w-full px-5 py-4 rounded-xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all bg-stone-50">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-end mb-2">
+                            <label class="block text-sm font-semibold text-emerald-900 uppercase tracking-widest">Shipping Address (Shipping Address)</label>
+                            <label class="flex items-center text-xs text-stone-500 cursor-pointer group">
+                                <input type="checkbox" id="same-as-above" class="mr-2 h-4 w-4 accent-emerald-600 cursor-pointer">
+                                <span class="group-hover:text-emerald-700 transition-colors">same as above</span>
+                            </label>
+                        </div>
+                        <input type="text" id="shipping_address" name="shipping_address" required placeholder="Shipping Destination"
+                            class="w-full px-5 py-4 rounded-xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all bg-stone-50">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-emerald-900 uppercase tracking-widest mb-2">Phone Number</label>
+                        <input type="tel" name="phone" required placeholder="Phone Number"
+                            class="w-full px-5 py-4 rounded-xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all bg-stone-50">
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block text-sm font-semibold text-emerald-900 uppercase tracking-widest mb-2">E-mail Address</label>
+                            <input type="email" id="email" name="email" required placeholder="email@example.com"
+                                class="w-full px-5 py-4 rounded-xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all bg-stone-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-emerald-900 uppercase tracking-widest mb-2">E-mail Address(Confirm)</label>
+                            <input type="email" id="email_confirm" required placeholder="Confirm email"
+                                class="w-full px-5 py-4 rounded-xl border border-stone-200 focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all bg-stone-50">
+                        </div>
+                    </div>
+
+                    <div class="pt-6 text-center">
+                        <button type="submit" 
+                            class="inline-block bg-emerald-900 text-white text-sm tracking-widest uppercase px-16 py-5 rounded-full shadow-md hover:bg-emerald-800 transition-all duration-300 hover:shadow-lg font-medium">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contact-form');
+            const addressInput = document.getElementById('address');
+            const shippingInput = document.getElementById('shipping_address');
+            const sameAsAboveCheckbox = document.getElementById('same-as-above');
+            const emailInput = document.getElementById('email');
+            const emailConfirmInput = document.getElementById('email_confirm');
+
+            // 住所連動機能
+            sameAsAboveCheckbox.addEventListener('change', function() {
+                if (this.checked) {
+                    shippingInput.value = addressInput.value;
+                    shippingInput.setAttribute('readonly', true);
+                    shippingInput.classList.add('opacity-60', 'bg-stone-100');
+                } else {
+                    shippingInput.removeAttribute('readonly');
+                    shippingInput.classList.remove('opacity-60', 'bg-stone-100');
+                }
+            });
+
+            // 住所入力時の動的反映
+            addressInput.addEventListener('input', function() {
+                if (sameAsAboveCheckbox.checked) {
+                    shippingInput.value = this.value;
+                }
+            });
+
+            // 送信時のバリデーション
+            form.addEventListener('submit', function(e) {
+                if (emailInput.value !== emailConfirmInput.value) {
+                    e.preventDefault();
+                    alert('メールアドレスが一致しません。もう一度ご確認ください。');
+                    emailConfirmInput.focus();
+                }
+            });
+        });
+    </script>
 
     <section id="legal" class="py-24 bg-stone-100 text-stone-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
